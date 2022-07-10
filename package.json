@@ -1,0 +1,29 @@
+{
+  "name": "dexbot",
+  "version": "1.0.0",
+  "description": "Bot for DexSlenderDimension Server",
+  "main": "out/index.js",
+  "repository": "none",
+  "author": "DexSlender",
+  "license": "MIT",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node --no-warnings --loader ts-node/esm/transpile-only src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "prod": "node ."
+  },
+  "dependencies": {
+    "canvas": "^2.9.3",
+    "detritus-client": "^0.17.0-beta.16",
+    "dotenv": "^16.0.1",
+    "listr2": "^4.0.5",
+    "mongoose": "^6.3.6",
+    "nanoid": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.42",
+    "ts-node": "^10.8.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3"
+  }
+}
